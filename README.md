@@ -49,4 +49,8 @@ The graph above captures the positioning of the countries taking into account co
 In the representation above one can see the block of vectors from component 1, consisting of IntelectProp, Trademark, Journals, GDP, TechValue and InternetServers. These vectors, in addition to the approximate parallelism with the OX line denoting it belongs to component 1, are colored in shades of red and orange. According to the legend, this means that the named variables have a large contribution to component 1. Moreover, as written on the axis, together they form 54.7% of the total amount of information of the original data set.
 
 ## Factorial Analysis
+### Tests
+<strong>The KMO test</strong> checks whether the partial correlations in the analyzed data are close enough to zero to suggest that there is at least one latent factor underlying the respective variables. The minimum acceptable value is 0.50, while I determined the KMO value of 0.819, which is higher and indicates that the factorability of the data is very good and the proposed analysis can continue.
+<strong>The Bartlett test</strong> reaches a value of 768.86, which is higher than the value of the CHI^2 distribution (61.65). The obtained results indicate the rejection of the null hypothesis and the acceptance of the alternative hypothesis of the existence of at least one common factor. Factor analysis is justified on our data.
+
 ## Clustering
