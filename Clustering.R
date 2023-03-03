@@ -1,9 +1,19 @@
 #Clustering methods
 
 library(readxl)
+library(ggplot2)
+library(reshape2)
+library(factoextra)
+library(NbClust)
+library(cluster)
+library(MASS)
+library(DiscriMiner)
+library(e1071)
+library(class)
+
 proiect <- read_excel("D:/Ruxi/Facultate/GitHub/Data_analysis_R/NoOutliers.xlsx")
 
-date<-proiect[,2:11]
+date<-proiect[,2:10]
 date_std <- scale(date,scale=TRUE)
 rownames(date_std)=proiect$Country
 
@@ -23,8 +33,7 @@ d_euclid_2forme=sqrt((date_std[1,1]-date_std[2,1])^2+
 d_euclid_2forme
 
 
-library(ggplot2)
-library(reshape2)
+
 m <- melt(as.matrix(d_std))
 windows()
 ggplot(data = m, aes(x=Var1, y=Var2, fill=value)) + 
@@ -34,7 +43,6 @@ ggplot(data = m, aes(x=Var1, y=Var2, fill=value)) +
 
 #_____________Stabilirea numarului de clustere_________________
 #Elbow
-library(factoextra)
 windows()
 fviz_nbclust(date_std, hcut, method = "wss") +
   geom_vline(xintercept = 4, linetype = 2)+
@@ -42,10 +50,8 @@ fviz_nbclust(date_std, hcut, method = "wss") +
 #Numarul optim de clustere din aplicarea metodei grafice e egal cu 4.
 
 
-#install.packages('NbClust')
-library(NbClust)
 windows()
-res<-NbClust(date_std, distance = "euclidean", min.nc=3, max.nc=7, 
+res<-NbClust(date_std, distance = "euclidean", min.nc=2, max.nc=4, 
              method = "ward.D2", index = "all")
 
 
@@ -60,14 +66,14 @@ plot(clust_std,labels=rownames(date_std))
 #dendrograma, ne spune grafic cum se grupeaza obiectele. 
 
 
-library(cluster)
+
 si4_std <- silhouette(cutree(clust_std, k = 3), d_std)
 windows()
 plot(si4_std, cex.names = 0.5)
 si4_std
 
 
-library(MASS)
+
 centroizi_std <- tapply(as.matrix(date_std), list(rep(cutree(clust_std, 3), ncol(date_std)), col(date_std)), mean)
 colnames(centroizi_std)=colnames(date_std)
 round(centroizi_std,3)#coordonate
@@ -125,7 +131,7 @@ plot(m_std[,3], m_std[,6], col=c("red","blue","green","black","magenta","yellow"
 text(m_std[,3],m_std[,6],labels=rownames(m_std),col="magenta",pos=3,cex=0.7)
 
 
-library(factoextra)
+
 windows()
 fviz_cluster(list(data = date_std, cluster = clasa_std))
 
@@ -165,8 +171,6 @@ ggplot(data) +
 
 
 
-#install.packages('DiscriMiner')
-library(DiscriMiner)
 rez=rbind(round(discPower(c_std[,2:11], c_std[,1])$F_statistic,4),round(discPower(c_std[,2:11], c_std[,1])$p_value,4))
 colnames(rez)=colnames(c_std[,2:11])
 rownames(rez)=c("F_statistic","p-value")
@@ -174,15 +178,8 @@ rez
 #constat ca toate cele 9 variabile detin capacitatea de a contribui la diferentierea obiectelor pe clase deoarece au o prob asociata testului f mai mica de 0.05 (pvalue)
 
 
-
-
 # INVATARE SUPERVIZATA
 
-library(readxl)
-proiect <- read_excel("C:/Users/RUXI/Desktop/Analiza Datelor/NoOutliers.xlsx")
-
-
-date<-proiect[,2:11]
 date_std <- scale(date,scale=TRUE)
 rownames(date_std)=proiect$Country
 
@@ -210,7 +207,7 @@ df$cls[df$cls ==2] <- "clasa2"
 df$cls[df$cls ==3] <- "clasa3"
 cbind(round(df[,1:10],3),df[,11])
 
-library(e1071)
+
 model  <- naiveBayes(as.factor(df[,11]) ~., data=df[,-11])
 summary(model)
 model$apriori 
@@ -232,7 +229,6 @@ table(pred_test, test[,11],dnn=c("Prediction","Actual"))
 
 
 #KNN
-library(class)
 
 pr <- knn(train[,-11],test[,-11],cl=train[,11],k=3)
 pr
