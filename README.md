@@ -14,19 +14,22 @@ To study the factors that can determine technological progress, I used a sample 
 + Internet security servers
 
 ## Principal Component Analysis
-# <strong>Standardization: </strong> 
+### <strong>Standardization: </strong> 
 To overcome the difficulties due to the different scaling of the data, I standardized the data and obtained a new set that does not show scaling irregularities and can be easily visualized.
 
-<strong>Correlation matrix:</strong> In orther to begin ACP, it is neccesary to consider the the correlation between variables. The correlation matrix captures the strength of the links between the indicators, as well as their sign. It is observed, for example, that between GDP and the amount of scientific publications in a country there is a very strong connection of a positive nature, which means that scientific studies and the phenomenon of their popularization are also reflected in the well-being of a country. This data is good for ACP.
+### <strong>Correlation matrix:</strong> 
+In orther to begin ACP, it is neccesary to consider the the correlation between variables. The correlation matrix captures the strength of the links between the indicators, as well as their sign. It is observed, for example, that between GDP and the amount of scientific publications in a country there is a very strong connection of a positive nature, which means that scientific studies and the phenomenon of their popularization are also reflected in the well-being of a country. This data is good for ACP.
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/101098099/222748510-fadc907c-3a0d-45fe-94a8-680905d37587.png">
 </div>
 
 
-<strong>Kaiser criterion: </strong> After applying ACP,the first principal component in the data set retains 49.18% of the information. The first two components retain a cumulative percentage of 62.59%. The first three components cumulatively retain 71.38% of the information, and I will continue with these three in my analysis according to the Kaiser criterion.
+### <strong>Kaiser criterion: </strong>
+After applying ACP,the first principal component in the data set retains 49.18% of the information. The first two components retain a cumulative percentage of 62.59%. The first three components cumulatively retain 71.38% of the information, and I will continue with these three in my analysis according to the Kaiser criterion.
 
-<strong>Components resulted: </strong> I graphically represented the connection between the indicators and the three main components retained in the analysis. 
+### <strong>Components resulted: </strong> 
+I graphically represented the connection between the indicators and the three main components retained in the analysis. 
 + The first principal component correlates very strongly with the IntelectProp, Trademark, Journals, GDP, TechValue and InternetServers indicators.
 It can be interpreted as a component that gives us information about the level of technological and scientific development in a country.
 + The second component correlates strongly with the variables UrbanPop and AccessElectricity, which refer to preconditions that enable technological advance. We will interpret this component as the infrastructure component.
