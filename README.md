@@ -10,7 +10,6 @@ To study the factors that can determine technological progress, I used a sample 
 + Scientific and technical journal articles
 + GDP (updated US dollars)
 + Added value of medium and high technology production (% added value of production)
-+ Communication, informatics, etc. (% of service imports, BdP)
 + Access to electricity (% of the population)
 + Internet security servers
 
@@ -20,7 +19,7 @@ To study the factors that can determine technological progress, I used a sample 
 <strong>Correlation matrix:</strong> In orther to begin ACP, it is neccesary to consider the the correlation between variables. The correlation matrix captures the strength of the links between the indicators, as well as their sign. It is observed, for example, that between GDP and the amount of scientific publications in a country there is a very strong connection of a positive nature, which means that scientific studies and the phenomenon of their popularization are also reflected in the well-being of a country. This data is good for ACP.
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/101098099/222747763-c10034fe-6460-4afd-975a-c840a21d327e.png">
+    <img src="https://user-images.githubusercontent.com/101098099/222748510-fadc907c-3a0d-45fe-94a8-680905d37587.png">
 </div>
 
 
