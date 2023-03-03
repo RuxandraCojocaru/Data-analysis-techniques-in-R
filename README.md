@@ -58,8 +58,12 @@ In the representation above one can see the block of vectors from component 1, c
 + Parallel analysis suggests that the number of factors =  2
 + <strong>Principal axis method </strong>with and without rotation is tested
 + <strong>Maximum likelihood method</strong> with and without rotation is also tested
+![image](https://user-images.githubusercontent.com/101098099/222770080-daeb1de8-5ba0-4185-888f-689b404b921d.png)
 
-![image](https://user-images.githubusercontent.com/101098099/222768720-217db0c4-d129-4e10-81a3-e850433db3f2.png)
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/101098099/222770080-daeb1de8-5ba0-4185-888f-689b404b921d.png">
+</div>
+
 From the four approaches used, the best result was obtained using the Maximum likelihood method with rotation.
 RMSR (root mean square) has a value of 0.06, close to 0.
 The Tucker Lewis Index is 0.905, which indicates a very good factorability of the data, much better than in the case of the pa model.
