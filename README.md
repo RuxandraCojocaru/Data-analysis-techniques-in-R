@@ -69,3 +69,22 @@ The Tucker Lewis Index is 0.905, which indicates a very good factorability of th
 The RMSEA is 0.118, a value close to 0, suitable, indicating relatively good model accuracy.
 
 ## Clustering
+## Number of clusters
+The function NbClust suggested 3 as the optimal number of clusters. To make sure, I also checked the average silhouette obtained in the case of clustering with 3, 4 or 5 clusters. For 3 clusters, the average silhouette is 0.36, while for 4 clusters it is 0.35 and for 5 clusters it is 0.21. The average silhouette must be as large as possible, so the 3-cluster clustering variation is the optimal one.
+
+## Methods applied
+= <strong>Ward method</strong>
++ <strong>Simple aggregation</strong>
++ <strong>Complete aggregation</strong>
++ <strong>Medium aggregation</strong>
++ <strong>Centroid method</strong>
++ <strong>K-means</strong>
+
+![image](https://user-images.githubusercontent.com/101098099/222777675-12ac4ae7-946a-41e0-ae9e-6fb84b7fca21.png)
+
+Through Ward method,the cluster identified on the left side of the dendrogram, framed in red, includes 15 countries, similar in that they are economically and technologically developed: Korea, Indonesia, Switzerland, Australia, Russia, Canada, Spain, Italy, Germany, Japan, France and England, as well as Brazil, Mexico and Turkey, countries that are likely to be among the technologically developed countries, but with the main function of exporters.
+Cluster 3, containing only 10 countries of which all are underdeveloped, is boxed in green. Most of the countries in the data set fall into cluster 1, bordered in blue. These countries show an average level of economic and technological development.
+
+![image](https://user-images.githubusercontent.com/101098099/222777301-a4e1d09f-b027-4bed-b66a-e69b7f8c5833.png)
+
+Through K-Means,the top figure visually renders the composition of the clusters using two dimensions. Dimension 1 explains 49.3% of the variance of the data set and dimension 2 only 13.8%. The cluster of highly developed countries is illustrated on the right side of the figure in blue. On the other hand, we now have a clear picture of the components of the remaining clusters and the intracluster similarity of the countries that compose them. It seems that in red we have shown the cluster that contains the countries with a satisfactory, average level of technological development, such as Romania, Belgium, Israel, Turkey, Mexico, Belarus, etc. The nature of the elements in this cluster becomes even more evident when compared to the elements of the green cluster, where countries such as Angola, Nigeria, Ghana, Cambodia, Honduras, Tonga, Senegal, etc. show an unsatisfactory level of technological development, the countries of this last cluster can be categorized as underdeveloped.
