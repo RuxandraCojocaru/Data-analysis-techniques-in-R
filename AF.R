@@ -1,8 +1,11 @@
 #Analiza factoriala
-
 library(readxl)
+library(GPArotation)
+library(psych)
+library(corrplot)
+
 proiect <- read_excel("D:/Ruxi/Facultate/GitHub/Data_analysis_R/NoOutliers.xlsx")
-date<-proiect[,2:11]
+date<-proiect[,2:10]
 date_std=scale(date, scale = TRUE)
 date_std=data.frame(date_std)
 
@@ -45,9 +48,7 @@ fa.parallel(date_std, show.legend = FALSE)
 fa.parallel(date_std) #2 factori
 
 
-# Extragerea factorilor - Metoda axelor principale cu si fara rotatie 
-install.packages("GPArotation")
-library(GPArotation)
+# Extragerea factorilor - Metoda axelor principale cu si fara rotatie )
 
 factori2 <- fa(date_std, nfactors =  2, rotate = "none", fm = "pa") #fara rotatie
 print(factori2$loadings, cutoff = 0.4)
@@ -55,7 +56,7 @@ fa.diagram(factori2)
 factori2 = fa(date_std, nfactors = 2, rotate = "Varimax", fm="pa") #cu rotatie
 print(factori2, cutoff=0.4)
 fa.diagram(factori2)
-library(corrplot)
+
 corrplot(factori2$loadings, method="circle")
 factori2
 
@@ -70,3 +71,4 @@ print(factori2, cutoff = 0.4)
 fa.diagram(factori2)
 corrplot(factori2$loadings, method="circle")
 factori2
+
