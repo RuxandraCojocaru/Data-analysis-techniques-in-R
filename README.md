@@ -69,11 +69,11 @@ The Tucker Lewis Index is 0.905, which indicates a very good factorability of th
 The RMSEA is 0.118, a value close to 0, suitable, indicating relatively good model accuracy.
 
 ## Clustering
-## Number of clusters
+### Number of clusters
 The function NbClust suggested 3 as the optimal number of clusters. To make sure, I also checked the average silhouette obtained in the case of clustering with 3, 4 or 5 clusters. For 3 clusters, the average silhouette is 0.36, while for 4 clusters it is 0.35 and for 5 clusters it is 0.21. The average silhouette must be as large as possible, so the 3-cluster clustering variation is the optimal one.
 
-## Methods applied
-= <strong>Ward method</strong>
+### Methods applied
++ <strong>Ward method</strong>
 + <strong>Simple aggregation</strong>
 + <strong>Complete aggregation</strong>
 + <strong>Medium aggregation</strong>
