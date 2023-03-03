@@ -36,7 +36,12 @@ It can be interpreted as a component that gives us information about the level o
 + <strong>The second component</strong> correlates strongly with the variables UrbanPop and AccessElectricity, which refer to preconditions that enable technological advance. We will interpret this component as the infrastructure component.
 + <strong>The third component</strong> is made up of Communications, ExportTech, but also UrbanPop, TechValue and Access Electricity. Due to the negative correlation of two indicators, the third component brings to mind the situation of underdeveloped countries where large companies operate to reduce personnel costs. Although there is industrial activity, the population is largely rural and access to the Internet is limited. We will call this component the exploitation component.
 
-![Rplot01](https://user-images.githubusercontent.com/101098099/222757752-fccc8e0c-ec45-44fa-b0bb-cd196ed9769b.png)
+### Other Visualization Methods
+
+![Rplot02](https://user-images.githubusercontent.com/101098099/222758404-f8f212a4-3f10-495e-ad84-bd7ca50cb96c.png)
+
+The graph above captures the positioning of the countries taking into account components 2 and 3. We notice that in the upper left are underdeveloped countries but producing export technology such as Ethiopia, Angola, Kenya. The higher a country is on the left side of the graph, the more likely it is to be part of component 3. Countries on the right side of the graph are highly developed and have a large urban environment with internet access.
 
 ![Picture2](https://user-images.githubusercontent.com/101098099/222754831-789c4625-ba17-4297-b17a-6fcfb2eadcd6.png)
 
+One can see the block of vectors from component 1, consisting of IntelectProp, Trademark, Journals, GDP, TechValue and InternetServers. These vectors, in addition to the approximate parallelism with the OX line denoting it belongs to component 1, are colored in shades of red and orange. According to the legend, this means that the named variables have a large contribution to component 1. Moreover, as written on the axis, together they form 54.7% of the total amount of information of the original data set.
