@@ -61,6 +61,7 @@ In the representation above one can see the block of vectors from component 1, c
 ![image](https://user-images.githubusercontent.com/101098099/222770080-daeb1de8-5ba0-4185-888f-689b404b921d.png)
 
 <div align="center">
+    ![image](https://user-images.githubusercontent.com/101098099/222770391-92562997-b46d-40b6-a9c7-2a9a548b9706.png)
     <img src="https://user-images.githubusercontent.com/101098099/222770080-daeb1de8-5ba0-4185-888f-689b404b921d.png">
 </div>
 
