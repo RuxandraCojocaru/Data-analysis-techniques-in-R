@@ -40,6 +40,8 @@ It can be interpreted as a component that gives us information about the level o
     <img src="https://user-images.githubusercontent.com/101098099/222753874-3e6a96d1-c431-4a5d-8a5b-ae0f8b32a9ab.png">
     <img src="https://user-images.githubusercontent.com/101098099/222754273-554e2a5d-6c46-471b-b057-7d26b753d934.png">
 </div>
+
 ![Picture1](https://user-images.githubusercontent.com/101098099/222754865-9e334223-314c-42eb-b576-e45b5ed0ae81.png)
+
 ![Picture2](https://user-images.githubusercontent.com/101098099/222754831-789c4625-ba17-4297-b17a-6fcfb2eadcd6.png)
 
