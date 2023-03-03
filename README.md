@@ -53,4 +53,16 @@ In the representation above one can see the block of vectors from component 1, c
 <strong>The KMO test</strong> checks whether the partial correlations in the analyzed data are close enough to zero to suggest that there is at least one latent factor underlying the respective variables. The minimum acceptable value is 0.50, while I determined the KMO value of 0.819, which is higher and indicates that the factorability of the data is very good and the proposed analysis can continue.
 <strong>The Bartlett test</strong> reaches a value of 768.86, which is higher than the value of the CHI^2 distribution (61.65). The obtained results indicate the rejection of the null hypothesis and the acceptance of the alternative hypothesis of the existence of at least one common factor. Factor analysis is justified on our data.
 
+
+### Number of factors and Factor extraction 
++ Parallel analysis suggests that the number of factors =  2
++ <strong>Principal axis method </strong>with and without rotation is tested
++ <strong>Maximum likelihood method</strong> with and without rotation is also tested
+
+![image](https://user-images.githubusercontent.com/101098099/222768720-217db0c4-d129-4e10-81a3-e850433db3f2.png)
+From the four approaches used, the best result was obtained using the Maximum likelihood method with rotation.
+RMSR (root mean square) has a value of 0.06, close to 0.
+The Tucker Lewis Index is 0.905, which indicates a very good factorability of the data, much better than in the case of the pa model.
+The RMSEA is 0.118, a value close to 0, suitable, indicating relatively good model accuracy.
+
 ## Clustering
