@@ -63,7 +63,7 @@ In the representation above one can see the block of vectors from component 1, c
     <img src="https://user-images.githubusercontent.com/101098099/222771430-8958d8df-f33e-47d7-aac8-1e7b984a9f5f.png">
 </div>
 
-From the four approaches used, the best result was obtained using the Maximum likelihood method with rotation.
+From the four approaches used, the best result was obtained using the Maximum likelihood method with rotation. The factor ML1 explains 69% of the model, and ML2 31%. The components of each factor can be seen in the picture above.
 RMSR (root mean square) has a value of 0.06, close to 0.
 The Tucker Lewis Index is 0.905, which indicates a very good factorability of the data, much better than in the case of the pa model.
 The RMSEA is 0.118, a value close to 0, suitable, indicating relatively good model accuracy.
