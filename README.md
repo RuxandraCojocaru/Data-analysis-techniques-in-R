@@ -60,7 +60,7 @@ In the representation above one can see the block of vectors from component 1, c
 + <strong>Maximum likelihood method</strong> with and without rotation is also tested
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/101098099/222770926-fd8ac5f7-594c-4390-aef4-bfa1cfb36af1.png">
+    <img src="https://user-images.githubusercontent.com/101098099/222771430-8958d8df-f33e-47d7-aac8-1e7b984a9f5f.png">
 </div>
 
 From the four approaches used, the best result was obtained using the Maximum likelihood method with rotation.
