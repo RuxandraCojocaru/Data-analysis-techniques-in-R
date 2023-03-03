@@ -38,7 +38,7 @@ It can be interpreted as a component that gives us information about the level o
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/101098099/222753874-3e6a96d1-c431-4a5d-8a5b-ae0f8b32a9ab.png">
-    <img src="https://user-images.githubusercontent.com/101098099/222753897-7d7bac3a-9c85-47f9-ab1c-084a47b5b2cf.png">
+    <img src="https://user-images.githubusercontent.com/101098099/222754273-554e2a5d-6c46-471b-b057-7d26b753d934.png">
 </div>
 
 
