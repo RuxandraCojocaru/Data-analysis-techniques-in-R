@@ -1,7 +1,7 @@
 # Data-analysis-techniques-in-R
 
 ## Goal: 
-To study the factors that can determine technological progress, I used a sample of 114 countries, capturing the evolution of 10 indicators during 2018. The data is  studied through Principal Component Analysis, Factorial Analysis and diverse methods of Cluestering. The factors considered are:
+To study the factors that can determine technological progress, I used a sample of 114 countries, capturing the evolution of 10 indicators during 2018. The data is  studied through Principal Component Analysis, Factorial Analysis and diverse methods of Clustering. The factors considered are:
 
 + Exports of medium and high technology (% exports of manufactured goods)
 + Urban population (% of total population)
